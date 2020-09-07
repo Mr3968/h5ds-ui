@@ -1,0 +1,106 @@
+.upload-container {
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  .upload-img-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .upload-img-box-item {
+      width: 100px;
+      height: 90px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+
+      &:hover div {
+        top: 0;
+      }
+
+      div {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        left: 0;
+        top: -90px;
+        transition: .5s;
+        text-align: center;
+        line-height: 90px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    &>div {
+      width: 100px;
+      height: 90px;
+      overflow: hidden;
+
+      &>img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.upload-box {
+  width: 100px;
+  height: 90px;
+  position: relative;
+  .upload-file{
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    display: inline-block;
+    opacity: 0;
+    width: 100px;
+    height: 90px;
+  }
+
+  // .upload-input {
+  //   z-index: 200;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 47px;
+  //   display: inline-block;
+  //   opacity: 0;
+  //   width: 100px;
+  //   height: 90px;
+  // }
+
+  .upload-button {
+    width: 100px;
+    height: 90px;
+    border-radius: 2px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 25px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+}
